@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
+:root{
+    --must: #000000;
+    --punane: #D83C3C;
+    --kollane: #FFFBB0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    color: var(--must);
+    background-color: var(--kollane);
+
+}
+
+.menu{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.page-menu{
+    justify-self: end;
+}
+
+.logo {
+  display: inline-block;
+  margin: 15px;
+}
+
+.logo-img {
+  width: 58px;
+  height: 58px;
+  border: 3px solid var(--must);
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.hamburger{
+    display: flex;
+    flex-direction: column;
+    width: 65px;   
+    height: 58px;
+    background-color: var(--punane);
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid var(--must);
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.menupanel {
+    position: absolute;
+    right: -264px;
+    top: 0;
+    width: 264px;
+    height: 519px;
+    background-color: var(--punane);
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 32px;
+    box-sizing: border-box;
+    transition: right 1s ease-in-out;
+}
+
+.menupanel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menupanel ul li {
+    margin-bottom: 32px;
+}
+
+.menupanel ul li a {
+    text-decoration: none;
+    color: var(--must);
+}
+
+.menupanel.active {
+    right: 0;
+}
+
+
+.line{
+    width: 45px;
+    height: 4px;
+    background-color: var(--must);
+    border-radius: 10px;
+    margin: 8px 0px;
+    
+}
+
+.profile{
+    text-align: center;
+    
+}
+.profile-image img {
+    width: 171px;
+    height: 171px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+hr{
+    width: 200px;
+    height: 10px;
+    background-color: var(--must);
+    border-radius: 7px;
+}
+
+.headline h3 {
+    font-family: "Russo One", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+}
+
+.frame {
+    width: 100%;
+    text-align: center;
+}
+
+.frame img {
+    display: inline-block;
+    width: 321px;
+    height: 163px;
+    object-fit: cover;
+    margin: 22px;
+}
+
+.myclients{
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.card h4 {
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    margin: 5px;
+}
+
+.card span{
+    display: inline-block;
+    background-color: var(--punane);
+    padding: 4px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.card p{
+    margin: 15px;
+}
+
+.contact{
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+
+.contact button{
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 24px;
+    background-color: var(--punane);
+    padding: 15px 51px;
+    margin: 32px;
+}
+
+.socialmedia{
+    width: 100%;
+    text-align: center;
+}
+
+.socialmediaimages ul{
+    list-style: none;
+    padding: 0;
+}
+
+.socialmediaimages ul li{
+    display: inline-block;
+    margin: 15px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 48px;
+}
+
+.menulist {
+    display: none;
+}
+
+.profileinfo {
+    display: none;
+}
+
+.myworksintro {
+    display: none;
+}
+
+.gallery {
+    display: none;
+}
+
+
+.contactintro {
+    display: none;
+}
+
+.contactform {
+    display: none;
+}
+
+.contactdetails {
+    display: none;
+}
+
+#contactme {
+    display: none;
+}
+
+
+
+
+
+@media (min-width: 600px) and (max-width: 1024px){
+    .hamburger{
+        display: none;
+    }
+
+    .menupanel {
+        display: none;
+    }
+
+    .menupanel.active {
+        display: none;
+    }
+
+    .menu{
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+
+    .menulist {
+        display: block;
+    }
+
+    .menulist ul {
+        list-style: none;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .menulist ul li{
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .menulist ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--must);
+        transition: transform 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+    }
+
+    .menulist ul li a:hover {
+        transform: scale(1.25);
+        text-shadow: 4px 4px 1px rgba(255, 0, 0, 0.256);
+    }
+
+    .profile{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-bottom: 24px;
+    }
+
+    .profile-image img{
+        width: 264px;
+        height: 264px;
+    }
+
+    .profileinfo{
+        display: grid;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .profiletext span{
+        font-size: 36px;
+        display: block;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .profiletext button {
+        display: inline-block;
+        border: none;
+        background-color: var(--punane);
+        font-size: 24px;
+        width: 251px;
+        padding: 20px;
+        border-radius: 10px;
+        transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out
+    }
+
+    .profiletext button:hover {
+        transform: scale(1.4);
+        box-shadow: 4px 4px 1px var(--must);
+    }
+
+    .myworks .frame {
+        display: none;
+    }
+
+    hr {
+        margin-left: 32px;
+    }
+
+    .headline h3 {
+        padding-left: 32px;
+        text-align: start;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, auto); 
+        gap: 10px;
+        margin-top: 32px;
+    }
+
+    .galleryitem {
+        text-align: center;
+    }
+
+    .galleryitem img{
+        width: 377px;
+        height: 210px;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .galleryitem img:hover {
+        transform: scale(1.05);
+    }
+
+    .myclients {
+        margin-top: 48px;
+    }
+
+    .myclients p {
+        width: 345px;
+        margin: 15px auto;
+    }
+
+    .card {
+        margin-top: 48px;
+    }
+
+    .btncontact {
+        display: none;
+    }
+
+    #contactme {
+    display: block;
+}
+
+    .contactintro {
+        display: block;
+        width: 100%;
+    }
+
+    .contactintro p {
+        width: 443px;
+        text-align: start;
+        margin-left: 32px;
+    }
+
+    .contactform {
+        display: block;
+        width: 100%;
+    }
+
+    .contactform form {
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+        font-size: 20px;
+    }
+
+    input, textarea{
+        width: 100%;
+        background-color: var(--punane);
+    }
+
+    input {
+        height: 34px;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+        box-sizing: border-box;
+        border-top: 2px solid var(--must);
+        border-left: 2px solid var(--must);
+    }
+
+    .contactform button {
+        background-color: var(--punane);
+        font-weight: 300;
+        margin-left: 0;
+    }
+
+    .contactdetails {
+        display: block;
+        width: 100%;
+    }
+
+    .contactdetails ul {
+        list-style: none;
+        padding: 0;
+        text-align: start;
+        margin-left: 32px;
+        font-size: 20px;
+    }
+
+    .socialmediaimages ul {
+        text-align: start;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .hamburger{
+        display: none;
+    }
+
+    .menupanel {
+        display: none;
+    }
+
+    .menupanel.active {
+        display: none;
+    }
+
+    .menu{
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+
+    .menulist {
+        display: block;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
+    .menulist ul {
+        list-style: none;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .menulist ul li{
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .menulist ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--must);
+        transition: transform 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+    }
+
+    .menulist ul li a:hover {
+        transform: scale(1.25);
+        text-shadow: 4px 4px 1px rgba(255, 0, 0, 0.256);
+    }
+
+
+    .profile{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin-bottom: 24px;
+    }
+
+    .profile-image img{
+        width: 600px;
+        height: 600px;
+        margin-left: 15px;
+    }
+
+    .profileinfo{
+        display: grid;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .profiletext span{
+        font-size: 36px;
+        display: block;
+        font-weight: 300;
+        margin-bottom: 10px;
+        margin-left: 32px;
+    }
+
+    .profiletext button {
+        display: inline-block;
+        border: none;
+        background-color: var(--punane);
+        font-size: 24px;
+        width: 251px;
+        padding: 20px;
+        border-radius: 10px;
+        transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out
+    }
+
+    .profiletext button:hover {
+        transform: scale(1.4);
+        box-shadow: 4px 4px 1px var(--must);
+    }
+
+    hr{
+    width: 318px;
+    height: 15px;
+    margin-left: 32px;
+     }
+
+.headline h3 {
+    font-size: 48px;
+    text-align: start;
+    margin-left: 32px;
+     }
+
+     .btncontact{
+        display: none;
+     }
+
+     .frame{
+        display: none;
+     }
+
+     .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto); 
+        gap: 10px;
+       margin: 48px auto;
+    }
+
+    .galleryitem {
+        text-align: center;
+    }
+
+    .galleryitem img{
+        width: 420px;
+        height: 240px;
+        object-fit: fill;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .galleryitem img:hover {
+        transform: scale(1.05);
+    }
+
+    .myworksintro p{
+        width: 923px;
+        margin-left: 32px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 90%;
+        margin: 48px auto;
+        border: 2px solid var(--must);
+        padding: 32px;
+    }
+
+.card h4 {
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    margin: 5px;
+}
+
+.card span{
+    display: inline-block;
+    background-color: var(--punane);
+    padding: 4px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.card p{
+    margin: 0;
+}
+
+.cardimg img{
+width: 216px;
+height: 163px;
+}
+
+.cardtext {
+    text-align: start;
+    box-sizing: border-box;
+    padding-right: 64px;
+}
+
+.role {
+    display: inline-block;
+    margin: 24px 0;
+    margin-right: 16px;
+}
+
+.contactintro p {
+    width: 90%;
+    text-align: start;
+    margin-left: 32px;
+}
+
+.getintouch {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+}
+
+
+
+.contactform {
+    display: block;
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .contactform form {
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+        font-size: 20px;
+    }
+
+    input, textarea{
+        width: 100%;
+        background-color: var(--punane);
+        border: none
+    }
+
+    input {
+        height: 34px;
+        margin-bottom: 24px;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+        box-sizing: border-box;
+        border-top: 2px solid var(--must);
+        border-left: 2px solid var(--must);
+    }
+
+    .contactform button {
+        background-color: var(--punane);
+        font-weight: 300;
+        margin-left: 0;
+    }
+
+    .socialmedia {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: start;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+
+    .socialmedia h3 {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+    #contactme {
+    display: block;
+}
+
+.contactintro {
+    display: block;
+}
+
+    .contactdetails {
+        font-size: 24px;
+        display: block;
+        text-align: start;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+
+    .contactdetails ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contactdetails ul li {
+        margin-bottom: 24px;
+    }
+
+    .socialmediaimages ul{
+    list-style: none;
+    padding: 0;
+}
+
+.socialmediaimages ul li{
+    display: inline-block;
+    margin: 0;
+}
+}
