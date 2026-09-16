@@ -26,7 +26,7 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
             // 4. Arvutame asukoha: sektsioon miinus päise paksus miinus 40px tühja ruumi
             const headerHeight = header.offsetHeight;
             const elementPosition = targetSection.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.scrollY - headerHeight - 0;
+            const offsetPosition = elementPosition + window.scrollY - headerHeight + 40;
             
             // 5. Teeme sujuva libisemise sinna punkti
             window.scrollTo({

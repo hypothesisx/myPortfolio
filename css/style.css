@@ -520,3 +520,21 @@ body {
     opacity: 1;
     transform: translateY(0); /* Sõidab sujuvalt oma õigele kohale ja muutub nähtavaks */
 }
+
+/* --- FOOKUS JA LIGIPÄÄSETAVUS (Musta kasti eemaldamine) --- */
+
+/* 1. Eemaldab vaikimisi inetu musta/sinise kasti kõikidelt linkidelt ja nuppudelt */
+a:focus, 
+button:focus,
+.service-card:focus,
+.contact-card:focus,
+.project-image:focus {
+    outline: none;
+}
+
+/* 2. Kui kasutaja navigeerib reaalsete klahvidega (nt Tab), joonistab ilusa karamellise ja ümara raami */
+:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 5px; /* Jätab elemendi ja kasti vahele väikese õhuvahe */
+    border-radius: 8px; /* Teeb kasti nurgad pehmeks */
+}
