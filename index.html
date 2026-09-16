@@ -3,231 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilmar Allan Olmaru | Audiovisual Producer</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>My Portfolio</title>
+    <!-- Google Fonts: Inter ja Anton -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="container">
-        <div class="header">
-            <div class="menu">
-                <div class="logo">
-                 <span style="padding-right:3px; padding-top:3px; display:block;">
-                 <img class="logo-img" src="images/Primitive - 1.png" />
-                 </span>
-                 </div>
 
-                <div class="page-menu">
-                    <div class="hamburger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-
-                    <div class="menupanel">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">MY WORKS</a></li>
-                    <li><a href="#">MY CLIENTS</a></li>
-                    <li><a href="#">CONTACT ME</a></li>
-                </ul>
-            </div>
-
-                     <div class="menulist">
-                        <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">MY WORKS</a></li>
-                            <li><a href="#">MY CLIENTS</a></li>
-                            <li><a href="#">CONTACT ME</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="images/PXL_20240528_154047682.jpg" alt="Ilmar Allan Olmaru">
-                </div>
-
-                <div class="profileinfo">
-                    <div class="profiletext">
-                    <span>Improve your strength, balance and flexiblility</span>
-                    <button>Check my works</button>
-                    </div>
-                </div>
-            </div>
+    <!-- PÄIS / HEADER -->
+    <header class="header">
+        <div class="logo-container">
+            <!-- Easter egg: klikitav profiilipilt -->
+            <a href="https://www.instagram.com/algneart" target="_blank" aria-label="Photo Gallery" class="easter-egg-link">
+                <img src="images/profile.jpg" alt="Allan Olmaru" class="profile-pic">
+            </a>
+            <span class="logo-text">Ilmar Allan Olmaru</span>
+        </div>
+        
+        <!-- Hamburger nupp mobiilile -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-        <div class="main">
+        <!-- Navigatsioonimenüü -->
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#equipment">EQUIPMENT</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="myworks">
-                <div class="headline">
-                    <hr>
-                    <h3>MY WORKS</h3>
-                </div>
+    <!-- SEKTSIONNIDE KONDIKAVAD (Täidame järgmistes sammudes) -->
+    <main>
+        <section id="hero" class="section hero-section">
+            <h1>Audiovisual Producer & Video Editor</h1>
+            <p>Translating complex ideas into clean, dynamic media.</p>
+        </section>
 
-                <div class="myworksintro">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, totam. Unde architecto nisi magni, quasi necessitatibus atque possimus ab blanditiis maxime deserunt alias vero illum, earum dicta obcaecati! Velit dicta voluptate debitis esse sequi eius quis iste nesciunt obcaecati aspernatur?</p>
-                </div>
-
-                <div class="frame">
-                    <img id="frame" src="images/PXL_20240814_164733313.MP.jpg" alt="My Works">
-                </div>
-
-                <div class="gallery">
-                    <div class="galleryitem">
-                        <img src="images/Bridge thumbnail.jpg" alt="Bridge">
+        <section id="works" class="section">
+            <h2>SHOWCASE</h2>
+            
+            <div class="works-container">
+                
+                <!-- PROJEKT 1: Lennujaama video (Ei ole klikitav, B2B fookus) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Pane siia lennujaama kuvatõmmise failinimi -->
+                        <img src="images/airport.png" alt="Industrial Training Video">
                     </div>
-
-                        <div class="galleryitem">
-                        <img src="images/Core thumbnail.jpg" alt="Core">
-                        </div>
-
-                        <div class="galleryitem">
-                        <img src="images/elbowlever thumbnail.jpg" alt="Elbow">
-                        </div>
-
-                        <div class="galleryitem">
-                        <img src="images/kipupthumb.jpg" alt="Kipup">
-                        </div>
-
-                        <div class="galleryitem">
-                        <img src="images/parallelbars.jpg" alt="Parallelbars">
-                        </div>
-
-                        <div class="galleryitem">
-                        <img src="images/pullup bar.jpg" alt="Pullup">
-                        </div>
-                </div>
-            </div>
-
-            <div class="myclients">
-                 <div class="headline">
-                    <hr>
-                    <h3>MY CLIENTS</h3>
-                </div>
-
-                <div class="clientcards">
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="images/car.svg" alt="car">
-                        </div>
-
-                        <div class="cardtext">
-                             <h4>AWESOME CARSHOP INC</h4>
-                        <div class="role">
-                            <span>UX/UI</span>
-                        </div>
-                        <div class="role">
-                            <span>FRONTEND/BACKEND DEVELOPMENT</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iste beatae ipsam hic. Placeat tenetur voluptate sequi molestiae! Nisi, nihil?</p>
-
-                        </div>
-                       
-                    </div>
-
-                    <div class="card">
-                        <div class="cardimg">
-                            <img src="images/Vector.svg" alt="cart">
-                        </div>
-
-                        <div class="cardtext">
-                             <h4>FOODMARKET LTD</h4>
-                        <div class="role">
-                            <span>UX/UI</span>
-                        </div>
-                        <div class="role">
-                            <span>FRONTEND/BACKEND DEVELOPMENT</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iste beatae ipsam hic. Placeat tenetur voluptate sequi molestiae! Nisi, nihil?</p>
-
-                        </div>
-                       
+                    <div class="project-info">
+                        <h3>B2B Industrial Training Video</h3>
+                        <p><strong>The scope:</strong> Translating complex and highly regulated aviation ground handling processes into a clear, visual onboarding tool.</p>
+                        <p><strong>The process:</strong> Coordinated a full-day shoot and a weeklong post-production workflow focused on clarity, pacing, and instructional design. Authored the script and integrated AI-generated voiceovers throughout.</p>
+                        <p><strong>Why it matters:</strong> Demonstrates my ability to handle corporate safety standards and deliver functional internal communication tools. <em>(Full video available via private link upon request).</em></p>
                     </div>
                 </div>
-            </div>
 
-            <div class="contact">
-                <div class="headline">
-                    <hr>
-                    <h3 id="contactme">CONTACT ME</h3>
+                <!-- PROJEKT 2: Podcast (Klikitav link) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Pane siia podcasti logo ja Spotify link -->
+                        <a href="https://open.spotify.com/show/1Iw6D9FGyR0vFwwa0pda6J" target="_blank">
+                            <img src="images/podcast.jpg" alt="Podcast Production">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Podcast Show "Lahtimõtestaja"</h3>
+                        <p><strong>The scope:</strong> End-to-end independent production of a 10-episode audio series.</p>
+                        <p><strong>The process:</strong> From scriptwriting and host duties to audio recording, editing, and final platform distribution.</p>
+                        <p><strong>Why it matters:</strong> Shows my capacity to manage long-term, multi-stage projects independently, ensuring consistent quality and technical audio precision.</p>
+                    </div>
                 </div>
 
-                <div class="contactintro">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dignissimos non sint sapiente aliquam at nesciunt molestiae. Harum exercitationem minus odio asperiores, officia maiores quod.</p>
-
-                </div>
-                <div class="btncontact">
-                    <button>CONTACT ME</button>
-                </div>
-
-                <div class="getintouch">
-                    <div class="contactform">
-                    <form action="#">
-                        <div class="label">
-                            <label for="name">Name</label>
-                        </div>
-
-                        <div class="forminput">
-                            <input type="text" id="name" required>
-                        </div>
-
-                        <div class="label">
-                            <label for="email">Email</label>
-                        </div>
-
-                        <div class="forminput">
-                            <input type="email" id="email" required>
-                        </div>
-
-                        <div class="label">
-                            <label for="message">Message</label>
-                        </div>
-
-                        <div class="textarea">
-                            <textarea name="message" id="message" rows="20" required></textarea>
-
-                        </div>
-
-                        <div class="btnform">
-                            <button type="submit">SUBMIT</button>
-                        </div>
-
-                    </form>
+                <!-- PROJEKT 3: Treeningvideo (Klikitav link) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Pane siia treeningvideo thumbnail ja YouTube link -->
+                        <a href="https://www.youtube.com/@PrimitiveGymnastics" target="_blank">
+                            <img src="images/sport.png" alt="Dynamic Sports Editing">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dynamic Sports & Fitness Content</h3>
+                        <p><strong>The scope:</strong> High-energy, fast-paced video editing designed for modern social media platforms.</p>
+                        <p><strong>The process:</strong> Leveraging decades of gymnastics experience to translate complex, science-backed concepts into easily digestible content optimized for viewer retention.</p>
+                        <p><strong>Why it matters:</strong> Perfect for brands or agencies looking for editors who understand platform algorithms and dynamic pacing.</p>
+                    </div>
                 </div>
 
-                <div class="contactdetails">
-                    <ul>
-                        <li><img src="images/phone-alt.svg" alt=""> +372 55996886</li>
-                        <li><img src="images/envelope.svg" alt=""> allan.olmaru@gmail.com</li>
-                    </ul>
-                </div>
-                <div class="socialmedia">
-                <div class="headline">
-                    <h3>FIND ME ON</h3>
-
-                </div>
-                <div class="socialmediaimages">
-                    <ul>
-                        <li><img src="images/fb.svg" alt="FB"></li>
-                        <li><img src="images/ig.svg" alt="IG"></li>
-                        <li><img src="images/yt.svg" alt="YT"></li>
-                    </ul>
-                </div>
-                </div>
-
-                    
+                <!-- PROJEKT 4: Reisivideo (Klikitav link) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- Pane siia reisivideo thumbnail ja YouTube link -->
+                        <a href="https://www.youtube.com/channel/UCnauScrU0gnMj8eE1YidRiA" target="_blank">
+                            <img src="images/travel.jpg" alt="Travel & Run-and-Gun Filmmaking">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Travel Filmmaking</h3>
+                        <p><strong>The scope:</strong> Cinematic environmental storytelling.</p>
+                        <p><strong>The process:</strong> Utilized a mobile 4K setup to capture high-quality footage without disrupting the environment. Developed the core concept, compartmentalized the narrative, audio, and shot list, and managed full execution.</p>
+                        <p><strong>Why it matters:</strong> Proves I can shoot independently on location, adapt to natural lighting, and turn raw environments into compelling narratives quickly.</p>
+                    </div>
                 </div>
 
             </div>
+        </section>
 
-        </div>
+        <section id="services" class="section">
+            <h2>SOLUTIONS</h2>
+            
+            <div class="services-grid">
+                
+                <!-- Teenus 1: Montaaž -->
+                <a href="#contact" class="service-card">
+                    <div class="service-icon">
+                        <!-- Käärid / Montaaži ikoon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <line x1="20" y1="4" x2="8.12" y2="15.88"></line>
+                            <line x1="14.47" y1="14.48" x2="20" y2="20"></line>
+                            <line x1="8.12" y1="8.12" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Video Editing & Color Grading</h3>
+                    <p>Professional post-production in DaVinci Resolve. From narrative structuring and proxy workflows to precise color grading.</p>
+                </a>
 
-        <footer>
-            <p>© 2025, AWESOME MEDIA</p>
+                <!-- Teenus 2: Operaatoritöö -->
+                <a href="#contact" class="service-card">
+                    <div class="service-icon">
+                        <!-- Kaamera ikoon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                            <circle cx="12" cy="13" r="4"></circle>
+                        </svg>
+                    </div>
+                    <h3>Videography & Production</h3>
+                    <p>Swift shooting for dynamic environments. Equipped to handle on-site corporate shoots, training videos, advertisements and event coverage.</p>
+                </a>
+
+                <!-- Teenus 3: Sotsiaalmeedia -->
+                <a href="#contact" class="service-card">
+                    <div class="service-icon">
+                        <!-- Nutitelefoni ikoon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>Social Media Content</h3>
+                    <p>Platform-optimized content creation and marketing. Fast-paced, engaging edits designed specifically for algorithms and audience retention.</p>
+                </a>
+
+                <!-- Teenus 4: Podcast -->
+                <a href="#contact" class="service-card">
+                    <div class="service-icon">
+                        <!-- Mikrofoni ikoon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>
+                            <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                            <line x1="12" y1="19" x2="12" y2="23"></line>
+                            <line x1="8" y1="23" x2="16" y2="23"></line>
+                        </svg>
+                    </div>
+                    <h3>Podcast & Audio Production</h3>
+                    <p>End-to-end podcast creation. From professional audio recording and multi-track mixing to final distribution formatting.</p>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="equipment" class="section">
+            <h2>GEAR</h2>
+            <p class="section-subtitle">A highly mobile, professional setup built for speed, quality, and adaptability.</p>
+            
+            <div class="equipment-grid">
+                
+                <!-- 1. Kaamera -->
+                <div class="gear-item">
+                    <div class="gear-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                        </svg>
+                    </div>
+                    <div class="gear-info">
+                        <h3>Primary Camera: DJI Osmo Pocket 3</h3>
+                        <p>Compact cinematic powerhouse. Capable of shooting up to 4K 60fps with D-Log M color profiles, allowing for maximum dynamic range and precise color grading in post-production.</p>
+                    </div>
+                </div>
+
+                <!-- 2. Arvuti / Montaaž -->
+                <div class="gear-item">
+                    <div class="gear-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="2" y1="20" x2="22" y2="20"></line>
+                        </svg>
+                    </div>
+                    <div class="gear-info">
+                        <h3>Post-Production: Apple MacBook Pro M4 Pro</h3>
+                        <p>High-performance mobile workstation. Ensures lightning-fast render times, seamless timeline scrubbing without proxies, and rapid project turnarounds on location.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Heli -->
+                <div class="gear-item">
+                    <div class="gear-icon">
+                        <!-- Klassikaline helitugevuse ikoon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                        </svg>
+                    </div>
+                    <div class="gear-info">
+                        <h3>Professional Audio: DJI Mic 2</h3>
+                        <p>Wireless, low-profile audio recording. Features 32-bit float internal recording to guarantee unclipped, crystal-clear dialogue and ambient sound in unpredictable environments.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Foto / Nutisisu -->
+                <div class="gear-item">
+                    <div class="gear-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                            <circle cx="12" cy="13" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="gear-info">
+                        <h3>B-Cam & Stills: Google Pixel 8</h3>
+                        <p>High-end computational photography and 4K B-roll capabilities. Perfect for capturing ultra-responsive social media assets, location scouting, and behind-the-scenes content.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>CONNECT</h2>
+            <p class="section-subtitle">Let's discuss your next project.</p>
+            
+            <div class="contact-grid">
+                
+                <!-- Email (mailto link avab kohe meiliprogrammi) -->
+                <a href="mailto:allan.olmaru@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>allan.olmaru@gmail.com</p>
+                </a>
+                
+                <!-- Telefon (tel link laseb nutitelefonis kohe helistada) -->
+                <a href="tel:+37255996886" class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <p>+372 5599 6886</p>
+                </a>
+
+                <!-- Asukoht -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Tallinn, Estonia</p>
+                </div>
+
+                <!-- Sotsiaalmeedia -->
+               <!-- Sotsiaalmeedia -->
+                <div class="contact-card">
+                    <div class="contact-icons-row">
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/allanteeb" target="_blank" class="social-mini-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://youtube.com/@PrimitiveGymnastics" target="_blank" class="social-mini-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/allan.olmaru" target="_blank" class="social-mini-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
+                    <h3>Social Media</h3>
+                    <p>Behind the lens</p>
+                </div>
+
+            </div>
+        </section>
+        <footer class="footer">
+            <p>&copy; 2026 Ilmar Allan Olmaru. All rights reserved.</p>
         </footer>
-
-    </div>
+    </main>
 
     <script src="app.js"></script>
 </body>

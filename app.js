@@ -1,31 +1,43 @@
-const btnHamburger = document.querySelector(".hamburger");
-const menuPanel = document.querySelector(".menupanel");
-const menuLinks = document.querySelectorAll(".menupanel a");
-const frameImage = document.querySelector("#frame");
-const images = ["PXL_20240814_164733313.MP.jpg", "Bridge thumbnail.jpg", "Core thumbnail.jpg", "elbowlever thumbnail.jpg", "kipupthumb.jpg", "parallelbars.jpg"];
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
 
-let currentImageIndex = 0;
+// Kui vajutad hamburgerile, lisa/eemalda 'active' klass
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
 
-frameImage.addEventListener("click", () =>{
-currentImageIndex++;
-if(currentImageIndex >= 6) {
-currentImageIndex = 0;
+// Kui vajutad menüüs mõnele lingile, pane menüü uuesti kinni
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
+});
+/* --- SKROLLIMISE ANIMATSIOON (Fade in) --- */
+// Otsime üles kõik sektsioonid peale Hero (sest Hero tuleb sisse juba lehe laadimisel)
+const sections = document.querySelectorAll('.section:not(#hero)');
+
+// Seadistame vaatleja (Observer) tingimused
+const observerOptions = {
+    threshold: 0.15, // Animatsioon käivitub, kui 15% sektsioonist on ekraanile ilmunud
+    rootMargin: "0px 0px -50px 0px" // Käivitub veidi enne, kui jõuab päris ekraani allserva
 };
-frameImage.src = "images/" + images[currentImageIndex];
-});
 
-btnHamburger.addEventListener("click", ()=> {
-menuPanel.classList.toggle("active");
-});
+const sectionObserver = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        // Kui element ei ole veel ekraanil, ära tee midagi
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            // Kui jõuab ekraanile, lisa nähtavuse klass
+            entry.target.classList.add('fade-in-visible');
+            // Lõpeta selle elemendi jälgimine (animatsioon toimub ainult üks kord alla kerides)
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
 
-document.addEventListener("click", (event) => {
-if(!menuPanel.contains(event.target) && !btnHamburger.contains(event.target)) {
-    menuPanel.classList.remove("active");
-}
-});
-
-menuLinks.forEach((link) => {
-link.addEventListener("click", () => {
-menuPanel.classList.remove("active");
-});
+// Käime kõik leitud sektsioonid läbi, muudame nad alguses nähtamatuks ja paneme vaatleja külge
+sections.forEach(section => {
+    section.classList.add('fade-in-hidden');
+    sectionObserver.observe(section);
 });
