@@ -10,7 +10,7 @@ hamburger.addEventListener('click', () => {
 /* --- SUJUV KERIMINE JA HINGAMISRUUM --- */
 const header = document.querySelector('.header');
 
-document.querySelectorAll('.nav-menu a').forEach(link => {
+document.querySelectorAll('.nav-menu a, .service-card').forEach(link => {
     link.addEventListener('click', function(e) {
         // 1. Peatame brauseri inetu hüppamise
         e.preventDefault();
