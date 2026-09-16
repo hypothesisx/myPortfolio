@@ -7,9 +7,33 @@ hamburger.addEventListener('click', () => {
 });
 
 // Kui vajutad menüüs mõnele lingile, pane menüü uuesti kinni
+/* --- SUJUV KERIMINE JA HINGAMISRUUM --- */
+const header = document.querySelector('.header');
+
 document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', function(e) {
+        // 1. Peatame brauseri inetu hüppamise
+        e.preventDefault();
+        
+        // 2. Paneme mobiilimenüü kinni (kui see on lahti)
         navMenu.classList.remove('active');
+        
+        // 3. Leiame, kuhu sektsiooni peame minema
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+            // 4. Arvutame asukoha: sektsioon miinus päise paksus miinus 40px tühja ruumi
+            const headerHeight = header.offsetHeight;
+            const elementPosition = targetSection.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - headerHeight - 0;
+            
+            // 5. Teeme sujuva libisemise sinna punkti
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
     });
 });
 /* --- SKROLLIMISE ANIMATSIOON (Fade in) --- */
